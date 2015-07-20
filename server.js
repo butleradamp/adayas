@@ -9,11 +9,11 @@ app.use('/assets', express.static('assets'));
 app.use('/bower_components', express.static('bower_components'));
 
 app.get('/privacy', function(req, res) {
-  res.render('privacy')
+  res.render('privacy'); //I'm not sure.
 });
 
 app.get('/terms', function(req, res) {
-  res.render('terms')
+  res.render('terms');
 });
 
 app.get('/:PI/:name', function (req, res) {
