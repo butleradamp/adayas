@@ -8,8 +8,8 @@ app.engine('html', ejs.renderFile);
 app.use('/assets', express.static('assets'));
 app.use('/bower_components', express.static('bower_components'));
 
-app.get('/privacy', function(req, res) {
-  res.render('privacy'); //I'm not sure.
+app.get('/', function(req, res) {
+  res.render('home'); //I'm not sure.
 });
 
 app.get('/terms', function(req, res) {
@@ -24,7 +24,7 @@ app.get('/adam', function (req, res) {
   res.send('Hello from adam!');
 });
 
-var port = 3000;
+var port = process.env.PORT || 3000
 var server = app.listen(port, function () {
   var host = server.address().address;
   var port = server.address().port;
