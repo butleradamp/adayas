@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+  color: #66CCFF;
+}
+h1 {
+  color: blue;
+}
+h2 {
+  color: yellow;
+}
+#first-paragraph {
+  color: green;
+}
+#second-paragraph {
+  color: white;
+}
+
+.important-paragraph {
+  color: red;
+  font-weight: 200;
+  font-size: 69;
+}
+
+.sign-up-paragraph {
+  font-size: 120;
+}
